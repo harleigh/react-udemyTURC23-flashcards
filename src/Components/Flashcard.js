@@ -3,7 +3,7 @@
 //   The parent component tells how this component should behave when clicked
 export function Flashcard({ onClick, showAnswer, question, answer }) {
   const setClassName = () => {
-    return showAnswer ? "selectedCard" : "flashcard";
+    return showAnswer ? "answerSide" : "questionSide";
   };
   const setDisplay = () => {
     return showAnswer ? answer : question;

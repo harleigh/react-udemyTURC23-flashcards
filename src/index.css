@@ -8,17 +8,19 @@ body {
   padding: 20px;
 }
 
+/* how all of the flashcards are laied out */
 .flashcards {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr; /*gives is a row of three; each is one part of the whole ("1fr")*/
   gap: 20px;
 }
 
-.flashcard {
+
+.questionSide {
   border: 1px solid #e7e7e7;
   background-color: #f7f7f7;
   border-radius: 7px;
-  aspect-ratio: 2 / 1;
+  aspect-ratio: 2 / 1; /* makes cards height larger*/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,7 +29,7 @@ body {
   cursor: pointer;
 }
 
-.selectedCard {
+.answerSide {
   border: 1px solid #e03131;
   background-color: #e03131;
   color: #fff;
