@@ -1,55 +1,35 @@
-/* 
-
- */
 
 * {
- box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   font-family: sans-serif;
-  color: #333;
+  padding: 20px;
 }
 
-/* the main app css */
-.dateApp {
-  width: 600px;
-  height: 250px;
-  background-color: #f7f7f7; /*pretty greyish background*/
+.flashcards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.flashcard {
+  border: 1px solid #e7e7e7;
+  background-color: #f7f7f7;
   border-radius: 7px;
-  margin: 100px auto;   /* placement of containing box*/
-  padding: 25px 100px;  /* placement of contents inside box*/
-}
-
-
-
-
-.dateModifier {
-  display: flex; /* puts all our div children on the same line*/
-  padding: 10px; /* some space between the modifiers */
-}
-.modTitle {
-  min-width: 60px; /*gives space so the numbers will line up even though titles have different length*/
-  font-weight:bolder;
-}
-.modVal {
-  padding-left: 20px;
-}
-
-/* the buttons in the modifier class */
-.dateModifier button {
-  margin-right: 10px;
-  margin-left: 10px;
-  font-size: larger;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-
-.displayDate {
+  aspect-ratio: 2 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  font-size: 25px;
-  margin: 40px 0; /*gives us some whitespace above us*/
+  padding: 20px;
+  cursor: pointer;
 }
 
-
+.selectedCard {
+  border: 1px solid #e03131;
+  background-color: #e03131;
+  color: #fff;
+  font-weight: bold;
+}
